@@ -113,9 +113,27 @@ package BridgeLabz.assignment2;
 
 // 7. Create a final variable inside a class. Try changing its value later. What error do you get?
 
+// class Demo {
+//     final int a = 234;
+//     void change() {
+//         a = 450; // This will cause a compilation error
+//     }
+// }
+
+// 8. Add a static block in a class to initialize a static variable. Print its value from the main() method.
+
 class Demo {
-    final int a = 234;
-    void change() {
-        a = 450; // This will cause a compilation error
+    static int a;
+    static {
+        a = 500;
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Value of static variable a: " + Demo.a);
+    }
+}
+
+
+
+
