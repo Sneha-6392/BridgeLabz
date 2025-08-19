@@ -155,17 +155,31 @@ package BridgeLabz.assignment2;
         Print all of them in a method.
 */
 
+// class Demo {
+//     int instanceVar = 1;      // instance
+//     static int staticVar = 2; // static
+//     void show() {
+//         int localVar = 3;     // local
+//         System.out.println(instanceVar + " " + staticVar + " " + localVar);
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         new Demo().show();
+//     }
+// }
+
+// 11. Declare a class variable (static) without initialization. Print its default value. Then assign and print again.
+
 class Demo {
-    int instanceVar = 1;      // instance
-    static int staticVar = 2; // static
-    void show() {
-        int localVar = 3;     // local
-        System.out.println(instanceVar + " " + staticVar + " " + localVar);
-    }
+    static int x; // 0
 }
 public class Main {
     public static void main(String[] args) {
-        new Demo().show();
+        System.out.println(Demo.x);
+        Demo.x = 50;
+        System.out.println(Demo.x); // 50
     }
 }
+
 
