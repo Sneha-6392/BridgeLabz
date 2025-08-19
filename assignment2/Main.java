@@ -193,12 +193,21 @@ package BridgeLabz.assignment2;
 
 // 13. Create two classes: A and B. Inside A, create a static variable x. In class B, change and print it.
 
-class A {
-    static int a = 20;
-}
-class B {
-    public static void main(String[] args) {
-        A.a = 50;
-        System.out.println(A.a);
+// class A {
+//     static int a = 20;
+// }
+// class B {
+//     public static void main(String[] args) {
+//         A.a = 50;
+//         System.out.println(A.a);
+//     }
+// }
+
+// 14. Create a method that accepts a parameter with the same name as a class variable. Use this keyword to assign it.
+
+class Demo {
+    int num;
+    void setNum(int num) {
+        this.num = num;
     }
 }
