@@ -60,19 +60,34 @@ package BridgeLabz.assignment2;
 
 // 4. Create a class Student with name (String) and marks (int). Use a constructor to initialize values. Create two objects and print their data.
 
-class Student {
-    String name;
-    int marks;
+// class Student {
+//     String name;
+//     int marks;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Student s1 = new Student();
+//         s1.name = "Sneha Maurya";
+//         s1.marks = 85;
+//         Student s2 = new Student();
+//         s2.name = "Vanshika Parashar";
+//         s2.marks = 90;   
+//         System.out.println("Student 1: " + s1.name + ", Marks: " + s1.marks);
+//         System.out.println("Student 2: " + s2.name + ", Marks: " + s2.marks);
+//     }
+// }
+
+// 5. Write a program where you modify a static variable using one object, and access it from another object. Show how it reflects the change.
+
+class Demo {
+    static int count = 0;
 }
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.name = "Sneha Maurya";
-        s1.marks = 85;
-        Student s2 = new Student();
-        s2.name = "Vanshika Parashar";
-        s2.marks = 90;   
-        System.out.println("Student 1: " + s1.name + ", Marks: " + s1.marks);
-        System.out.println("Student 2: " + s2.name + ", Marks: " + s2.marks);
+        Demo d1 = new Demo();
+        d1.count = 5;
+        Demo d2 = new Demo();
+        System.out.println("Value from d2: " + d2.count); 
+        // The static field Demo.count should be accessed in a static way
     }
 }
