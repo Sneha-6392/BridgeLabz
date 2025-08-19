@@ -94,19 +94,28 @@ package BridgeLabz.assignment2;
 
 // 6. Create a class Demo where you declare a local variable with the same name as an instance variable. Use this keyword to differentiate.
 
+// class Demo {
+//     int num;
+//     void setNum(int num) {
+//         this.num = num;  // differentiate between local and instance
+//     }
+//     void display() {
+//         System.out.println(num);
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo d = new Demo();
+//         d.setNum(20);
+//         d.display();
+//     }
+// }
+
+// 7. Create a final variable inside a class. Try changing its value later. What error do you get?
+
 class Demo {
-    int num;
-    void setNum(int num) {
-        this.num = num;  // differentiate between local and instance
-    }
-    void display() {
-        System.out.println(num);
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-        Demo d = new Demo();
-        d.setNum(20);
-        d.display();
+    final int a = 234;
+    void change() {
+        a = 450; // This will cause a compilation error
     }
 }
