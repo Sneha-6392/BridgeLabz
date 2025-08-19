@@ -42,18 +42,37 @@ package BridgeLabz.assignment2;
 
 // 3. Create a method inside a class that declares a local variable. Try printing it outside the method. What happens?
 
-class Car {
-    void method() {
-        int localVariable = 10;
-        System.out.println("Local variable inside method: " + localVariable);
-    }
+// class Car {
+//     void method() {
+//         int localVariable = 10;
+//         System.out.println("Local variable inside method: " + localVariable);
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Car car = new Car();
+//         car.method();
+//         // System.out.println("Local variable outside method: " + localVariable);
+//         // localVariable cannot be resolved to a variable
+//         // The above print statement will cause compilation error because localVariable is not accessible outside its method.
+//     }
+// }
+
+// 4. Create a class Student with name (String) and marks (int). Use a constructor to initialize values. Create two objects and print their data.
+
+class Student {
+    String name;
+    int marks;
 }
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        car.method();
-        // System.out.println("Local variable outside method: " + localVariable);
-        // localVariable cannot be resolved to a variable
-        // The above print statement will cause compilation error because localVariable is not accessible outside its method.
+        Student s1 = new Student();
+        s1.name = "Sneha Maurya";
+        s1.marks = 85;
+        Student s2 = new Student();
+        s2.name = "Vanshika Parashar";
+        s2.marks = 90;   
+        System.out.println("Student 1: " + s1.name + ", Marks: " + s1.marks);
+        System.out.println("Student 2: " + s2.name + ", Marks: " + s2.marks);
     }
 }
