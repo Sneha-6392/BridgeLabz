@@ -171,15 +171,22 @@ package BridgeLabz.assignment2;
 
 // 11. Declare a class variable (static) without initialization. Print its default value. Then assign and print again.
 
-class Demo {
-    static int x; // 0
-}
-public class Main {
-    public static void main(String[] args) {
-        System.out.println(Demo.x);
-        Demo.x = 50;
-        System.out.println(Demo.x); // 50
+// class Demo {
+//     static int x; // 0
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         System.out.println(Demo.x);
+//         Demo.x = 50;
+//         System.out.println(Demo.x); // 50
+//     }
+//}
+
+// 12. Write a class User with a final instance variable userId. Initialize it using a constructor.
+
+class User {
+    final int userId;
+    User(int id) {
+        this.userId = id;
     }
 }
-
-
