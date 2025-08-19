@@ -214,25 +214,46 @@ package BridgeLabz.assignment2;
 
 // 15. Create a class with multiple methods accessing the same instance variable. Show how changes made in one method affect another.
 
+// class Demo {
+//     int num;
+//     void setNum(int num) {
+//         this.num = num;
+//     }
+//     void display() {
+//         System.out.println("Current value of num: " + num);
+//     }
+//     void increment() {
+//         num++;
+//         System.out.println("Incremented value of num: " + num);
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo d = new Demo();
+//         d.setNum(10);
+//         d.display();
+//         d.increment();
+//         d.display(); 
+//     }
+// }
+
+// 16. Write a program to show that local variables must be initialized before use. Comment on what error appears otherwise.
+
 class Demo {
-    int num;
-    void setNum(int num) {
-        this.num = num;
-    }
-    void display() {
-        System.out.println("Current value of num: " + num);
-    }
-    void increment() {
-        num++;
-        System.out.println("Incremented value of num: " + num);
+    void method() {
+        int x;
+        // System.out.println(x);
+        // The local variable x may not have been initialized
     }
 }
-public class Main {
-    public static void main(String[] args) {
-        Demo d = new Demo();
-        d.setNum(10);
-        d.display();
-        d.increment();
-        d.display(); 
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
