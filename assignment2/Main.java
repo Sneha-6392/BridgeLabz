@@ -79,15 +79,34 @@ package BridgeLabz.assignment2;
 
 // 5. Write a program where you modify a static variable using one object, and access it from another object. Show how it reflects the change.
 
+// class Demo {
+//     static int count = 0;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo d1 = new Demo();
+//         d1.count = 5;
+//         Demo d2 = new Demo();
+//         System.out.println("Value from d2: " + d2.count); 
+//         // The static field Demo.count should be accessed in a static way
+//     }
+// }
+
+// 6. Create a class Demo where you declare a local variable with the same name as an instance variable. Use this keyword to differentiate.
+
 class Demo {
-    static int count = 0;
+    int num;
+    void setNum(int num) {
+        this.num = num;  // differentiate between local and instance
+    }
+    void display() {
+        System.out.println(num);
+    }
 }
 public class Main {
     public static void main(String[] args) {
-        Demo d1 = new Demo();
-        d1.count = 5;
-        Demo d2 = new Demo();
-        System.out.println("Value from d2: " + d2.count); 
-        // The static field Demo.count should be accessed in a static way
+        Demo d = new Demo();
+        d.setNum(20);
+        d.display();
     }
 }
