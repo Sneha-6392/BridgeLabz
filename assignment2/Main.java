@@ -205,9 +205,34 @@ package BridgeLabz.assignment2;
 
 // 14. Create a method that accepts a parameter with the same name as a class variable. Use this keyword to assign it.
 
+// class Demo {
+//     int num;
+//     void setNum(int num) {
+//         this.num = num;
+//     }
+// }
+
+// 15. Create a class with multiple methods accessing the same instance variable. Show how changes made in one method affect another.
+
 class Demo {
     int num;
     void setNum(int num) {
         this.num = num;
+    }
+    void display() {
+        System.out.println("Current value of num: " + num);
+    }
+    void increment() {
+        num++;
+        System.out.println("Incremented value of num: " + num);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Demo d = new Demo();
+        d.setNum(10);
+        d.display();
+        d.increment();
+        d.display(); 
     }
 }
