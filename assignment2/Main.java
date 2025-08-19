@@ -184,9 +184,21 @@ package BridgeLabz.assignment2;
 
 // 12. Write a class User with a final instance variable userId. Initialize it using a constructor.
 
-class User {
-    final int userId;
-    User(int id) {
-        this.userId = id;
+// class User {
+//     final int userId;
+//     User(int id) {
+//         this.userId = id;
+//     }
+// }
+
+// 13. Create two classes: A and B. Inside A, create a static variable x. In class B, change and print it.
+
+class A {
+    static int a = 20;
+}
+class B {
+    public static void main(String[] args) {
+        A.a = 50;
+        System.out.println(A.a);
     }
 }
