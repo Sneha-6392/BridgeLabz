@@ -136,15 +136,36 @@ package BridgeLabz.assignment2;
 
 // 9. Create a class Account with instance variables: accountHolder, balance. Use default values. Print them without setting any values.
 
-class Account {
-    String accountHolder;
-    double balance;
+// class Account {
+//     String accountHolder;
+//     double balance;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Account acc = new Account();
+//         System.out.println("Account Holder: " + acc.accountHolder); // null
+//         System.out.println("Balance: " + acc.balance); // 0.0
+//     }
+// }
+
+/* 10. Create a class that uses all three types of variables:
+            Instance variable
+            Static variable
+            Local variable
+        Print all of them in a method.
+*/
+
+class Demo {
+    int instanceVar = 1;      // instance
+    static int staticVar = 2; // static
+    void show() {
+        int localVar = 3;     // local
+        System.out.println(instanceVar + " " + staticVar + " " + localVar);
+    }
 }
 public class Main {
     public static void main(String[] args) {
-        Account acc = new Account();
-        System.out.println("Account Holder: " + acc.accountHolder); // null
-        System.out.println("Balance: " + acc.balance); // 0.0
+        new Demo().show();
     }
 }
 
