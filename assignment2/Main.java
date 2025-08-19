@@ -122,18 +122,29 @@ package BridgeLabz.assignment2;
 
 // 8. Add a static block in a class to initialize a static variable. Print its value from the main() method.
 
-class Demo {
-    static int a;
-    static {
-        a = 500;
-    }
+// class Demo {
+//     static int a;
+//     static {
+//         a = 500;
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         System.out.println("Value of static variable a: " + Demo.a);
+//     }
+// }
+
+// 9. Create a class Account with instance variables: accountHolder, balance. Use default values. Print them without setting any values.
+
+class Account {
+    String accountHolder;
+    double balance;
 }
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Value of static variable a: " + Demo.a);
+        Account acc = new Account();
+        System.out.println("Account Holder: " + acc.accountHolder); // null
+        System.out.println("Balance: " + acc.balance); // 0.0
     }
 }
-
-
-
 
