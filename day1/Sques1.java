@@ -1,5 +1,5 @@
 // Calculate Simple Interest
-package BridgeLabz.assignment1;
+package BridgeLabz.day1;
 import java.util.*;
 public class Sques1 {
     public static void main(String[] args) {

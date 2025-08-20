@@ -1,4 +1,4 @@
-package BridgeLabz.assignment2;
+package BridgeLabz.day2;
 // 1. Create a class Car with instance variables model and year. Create two car objects and display their details.
 
 // class Car {
@@ -174,7 +174,7 @@ package BridgeLabz.assignment2;
 // class Demo {
 //     static int x; // 0
 // }
-// public class Main {
+// public class Main { 
 //     public static void main(String[] args) {
 //         System.out.println(Demo.x);
 //         Demo.x = 50;
@@ -285,14 +285,14 @@ package BridgeLabz.assignment2;
 
 // 20. Create a program where you access a static variable without creating an object of the class.
 
-class Demo {
-    static int staticVar = 100;
-}
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Static Variable: " + Demo.staticVar);
-    }
-}
+// class Demo {
+//     static int staticVar = 100;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         System.out.println("Static Variable: " + Demo.staticVar);
+//     }
+// }
 
 
 

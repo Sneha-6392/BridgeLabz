@@ -1,5 +1,5 @@
 // Calculate Average of Three Numbers
-package BridgeLabz.assignment1;
+package BridgeLabz.day1;
 import java.util.*;
 public class Sques4 {
     public static void main(String[] args) {
