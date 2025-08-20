@@ -7,7 +7,6 @@ public class ques4 {
         int[] numbers = new int[10];
         int sum = 0;
         int count = 0;
-
         while (count < 10) {
             int input = sc.nextInt();
             if (input <= 0) {
@@ -17,14 +16,11 @@ public class ques4 {
             sum += input;
             count++;
         }
-
         System.out.println("You entered:");
         for (int i = 0; i < count; i++) {
             System.out.print(numbers[i] + " ");
         }
-        
         System.out.println("\nSum of all numbers: " + sum);
-
         sc.close();
     }
 }
