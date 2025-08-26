@@ -1,4 +1,4 @@
-package BridgeLabz.day3;
+package BridgeLabz.day3.arrays; 
 /* Write a program FizzBuzz */
 import java.util.*;
 public class ques10 {

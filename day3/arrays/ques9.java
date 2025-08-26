@@ -1,4 +1,4 @@
-package BridgeLabz.day3;
+package BridgeLabz.day3.arrays;
 /* Working with Multi-Dimensional Arrays. Write a Java program to create a 2D Array and Copy the 2D Array into a single dimension array */
 import java.util.*;
 public class ques9 {

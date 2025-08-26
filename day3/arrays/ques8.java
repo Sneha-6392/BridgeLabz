@@ -1,4 +1,4 @@
-package BridgeLabz.day3;
+package BridgeLabz.day3.arrays;
 /* Create a program to find the factors of a number taken as user input, store the factors in an array, and display the factors */
 import java.util.*;
 public class ques8 {
